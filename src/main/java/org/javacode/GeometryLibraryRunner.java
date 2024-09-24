@@ -8,31 +8,31 @@ public class GeometryLibraryRunner {
 
     public static void main(String[] args) {
 
-        Circle circle = new Circle();
+        Circle circle = new Circle(10);
         System.out.printf("""
                 Circle:
                 Perimeter = %.2f
                 Area = %.2f
                 """
-                , circle.getPerimeter(10), circle.getArea(10)
+                , circle.getPerimeter(), circle.getArea()
         );
 
-        Triangle triangle = new Triangle();
+        Triangle triangle = new Triangle(10, 8, 10, 10);
         System.out.printf("""
                 Triangle:
                 Perimeter = %.2f
                 Area = %.2f
                 """
-                , triangle.getPerimeter(10, 20, 30), triangle.getArea(10, 15)
+                , triangle.getPerimeter(), triangle.getArea()
         );
 
-        Rectangle rectangle = new Rectangle();
+        Rectangle rectangle = new Rectangle(10, 20);
         System.out.printf("""
                 Rectangle:
                 Perimeter = %.2f
                 Area = %.2f
                 """
-                , rectangle.getPerimeter(10, 20), rectangle.getArea(10, 20)
+                , rectangle.getPerimeter(), rectangle.getArea()
         );
 
     }
