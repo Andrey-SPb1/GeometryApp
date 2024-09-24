@@ -1,5 +1,6 @@
 package org.javacode;
 
+import org.javacode.ThreeDemensionalShapes.Cube;
 import org.javacode.ThreeDemensionalShapes.Sphere;
 import org.javacode.shapes.Circle;
 import org.javacode.utils.GeometryUtils;
@@ -14,6 +15,8 @@ public class GeometryUtilRunner {
 
         double difference2 = utils.areaDifference(new Sphere(10), new Sphere(20));
         System.out.println(difference2);
+
+        System.out.println(new Cube(10));
 
         double converted = utils.convertCmToMm(100);
         System.out.println("100cm = " + converted + "mm");
