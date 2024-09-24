@@ -13,6 +13,9 @@ public class GeometryUtilRunner {
 
         double converted = utils.convertCmToMm(100);
         System.out.println("100cm = " + converted + "mm");
+
+        double converted2 = utils.convertMmToCm(100);
+        System.out.println("100mm = " + converted2 + "cm");
     }
 
 }
